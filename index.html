@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>RavenBot</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="google-site-verification" content="A9eqmCDsy-6zY1Qv5YUDqPdFXHfNUt5y8qdqJN9EZBU" />
+
+	<meta name="subject" content="RockPaperScissors Bot">
+	<meta name="theme-color" content="#7289DA">
+	<meta property="og:title" content="RockPaperScissors Bot">
+	<meta property="og:url" content="https://www.rps-bot.tk">
+	<meta property="og:image" content="https://andreagennaioli.github.io/rockpaperscissors/img/webicon.png">
+	<meta property="og:description"
+		content="Play with your friends at rock paper scissors with RockPaperScissors Bot for Discord.">
+
+
+	<link rel="icon" href="./img/webicon.png">
+	<link rel="shortcut icon" href="./img/webicon.png" type="image/x-icon">
+
+	<script src="https://kit.fontawesome.com/0ce233a34f.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&amp;display=swap"
+		rel="stylesheet">
+
+
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+	<div class="grid">
+		<div class="grid-item">
+			<img class="image" src="./img/icon.png">
+		</div>
+		<div class="grid-item">
+			<h1 class="title">RAVENBOT</h1>
+		</div>
+		<div class="grid-item buttons">
+			<a alt="invite the bot" title="invite the bot" target="_blank"
+				href="https://discord.com/oauth2/authorize?client_id=723877094920290305&scope=bot&permissions=1341644225"
+				class="button">INVITE THE BOT</a>
+			<a alt="join support server" title="join support server" target="_blank" href="https://discord.gg/XpwUGpt"
+				class="button">SUPPORT SERVER</a>
+		</div>
+		
+		<div class="grid-item" style="margin-top: 40px; margin-left: -15px;color: white"><i class="fa fa-code"
+				aria-hidden="true"></i> bot by
+			<div class="tooltip"><span class="tooltiptext" id="myTooltip"><i class="fa fa-copy"></i> copy</span>
+				<span id="discord-tag" style="color: #7289DA; cursor: pointer">
+					Marvee and Avatat</span>
+			</div>
+		</div>
+		
+
+	</div>
+	<div class="grid-item iinfo">
+		Website template inspired by
+		<div class="tooltip"><span class="tooltiptext" id="myTooltip"><i class="fa fa-link" aria-hidden="true"></i> open</span>
+			<a href="https://www.rps-bot.tk/" target="_blank" id="sterlex" style="color: #7289DA; cursor: pointer">
+				rps-bot.tk</a>
+		</div>
+	</div>
+
+	<script>
+		document.getElementById('discord-tag').addEventListener('click', () => {
+			const el = document.createElement('textarea');
+			el.value = document.getElementById('discord-tag').innerText;
+			document.body.appendChild(el);
+			el.select();
+			document.execCommand('copy');
+			document.body.removeChild(el);
+
+		});
+	</script>
+
+</body>
+</div>
+
+</html>
